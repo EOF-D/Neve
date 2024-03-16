@@ -144,6 +144,8 @@
         -- o.guifont = "BlexMono Nerd Font Mono:h14:Medium:i"
         -- o.guifont = "Liga SFMono Nerd Font:b:h15"
       end
+
+      vim.cmd [[ colorscheme gruvbox-material ]]
     '';
   };
 }
