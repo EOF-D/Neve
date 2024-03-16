@@ -113,6 +113,10 @@
       laststatus = 3; # (https://neovim.io/doc/user/options.html#'laststatus')
     };
 
+    extraPlugins = with pkgs.vimPlugins; [
+      gruvbox-material
+    ];
+
     extraConfigLua = ''
       local opt = vim.opt
       local g = vim.g
