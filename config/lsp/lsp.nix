@@ -11,6 +11,7 @@
         clangd = {
           enable = true;
           cmd = [
+            "clangd"
             "-j=8"
             "--malloc-trim"
             "--background-index"
