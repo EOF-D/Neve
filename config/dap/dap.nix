@@ -29,6 +29,14 @@
         enable = true;
       };
     };
+
+    adapters.executables = {
+      gdb = {
+        command = "gdb";
+        args = ["-i" "dap"];
+      };
+    };
+
     configurations = {
       java = [
         {
@@ -37,6 +45,14 @@
           name = "Debug (Attach) - Remote";
           hostName = "127.0.0.1";
           port = 5005;
+        }
+      ];
+
+      cpp = [
+        {
+          name = "Launch";
+          type = "gdb";
+          request = "launch";
         }
       ];
     };

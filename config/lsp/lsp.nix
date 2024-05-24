@@ -8,7 +8,15 @@
       capabilities = "offsetEncoding =  'utf-16'";
       servers = {
         solargraph = {enable = true;};
-        clangd = {enable = true;};
+        clangd = {
+          enable = true;
+          cmd = [
+            "-j=8"
+            "--malloc-trim"
+            "--background-index"
+            "--pch-storage=memory"
+          ];
+        };
         lua-ls = {
           enable = true;
           extraOptions = {
