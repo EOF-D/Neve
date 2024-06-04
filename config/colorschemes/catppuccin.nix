@@ -1,7 +1,7 @@
 {
   colorschemes = {
     catppuccin = {
-      enable = false;
+      enable = true;
       background = {
         light = "macchiato";
         dark = "mocha";
